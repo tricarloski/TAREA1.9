@@ -151,6 +151,39 @@
 
 <!-- month: permite seleccionar un mes y un año -->
 <input type="month" id="mes" name="mes">
+<label for="modulos">DAW:</label>
+
+<!-- select: crea una lista de opciones -->
+<!-- multiple: permite seleccionar varias opciones -->
+<select id="modulos" name="modulos" multiple>
+
+    <!-- optgroup: agrupa opciones relacionadas -->
+    <optgroup label="Primer curso">
+
+        <!-- option: representa una opción del select -->
+        <option value="lenguaje">Lenguaje de Marcas</option>
+        <option value="bases">Bases de Datos</option>
+
+    </optgroup>
+
+    <optgroup label="Otros">
+
+        <!-- selected: deja esta opción seleccionada por defecto -->
+        <option value="entornos" selected>Entornos de Desarrollo</option>
+        <option value="sistemas">Sistemas Informáticos</option>
+
+    </optgroup>
+
+</select>
+
+<br><br>
+
+<label for="comentarios">Mucho texto:</label>
+
+<!-- textarea: crea un campo de texto de varias líneas -->
+<!-- rows y cols: indican el tamaño visible -->
+<textarea id="comentarios" name="comentarios"
+    rows="5" cols="40"></textarea>
 
     </form>
 
