@@ -205,6 +205,25 @@
 <button type="button">Botón normal</button>
 
     </form>
+    <form action="https://es.wikipedia.org/w/index.php" method="get">
+
+    <label for="buscar-wiki">Buscar en la wiki:</label>
+
+    <!-- search: crea un campo pensado para búsquedas -->
+    <!-- list: relaciona el input con un datalist -->
+    <input type="search" id="buscar-wiki" name="search"
+        list="sugerencias">
+
+    <!-- datalist: muestra sugerencias posibles -->
+    <datalist id="sugerencias">
+        <option value="Formulario web">
+        <option value="HTML">
+        <option value="Protocolo de transferencia de hipertexto">
+    </datalist>
+
+    <button type="submit">Buscar</button>
+
+</form>
 
 </body>
 
