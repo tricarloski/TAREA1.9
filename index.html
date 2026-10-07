@@ -29,9 +29,8 @@
             <!-- autofocus: pone el foco en este campo al cargar la página -->
             <!-- size: indica el ancho visible del campo -->
             <!-- maxlength: limita el número máximo de caracteres -->
-            <input type="text" id="nombre" name="nombre"
-                placeholder="Choripan"
-                required autofocus size="30" maxlength="40">
+            <input type="text" id="nombre" name="nombre" placeholder="Que pongas tu nombre" required autofocus size="30"
+                maxlength="40">
 
             <br><br>
 
@@ -39,8 +38,7 @@
 
             <!-- password: oculta los caracteres introducidos -->
             <!-- minlength: indica el mínimo de caracteres -->
-            <input type="password" id="contrasena" name="contrasena"
-                minlength="8" required>
+            <input type="password" id="contrasena" name="contrasena" minlength="8" required>
 
             <br><br>
 
@@ -55,217 +53,206 @@
 
             <!-- tel: crea un campo para un número de teléfono -->
             <!-- pattern: establece el formato que debe cumplir el dato -->
-            <input type="tel" id="telefono" name="telefono"
-                pattern="[0-9]{9}">
-                <label for="fecha">04/02/1702:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
+            <label for="fecha">Fecha:</label>
 
-<!-- date: permite seleccionar una fecha -->
-<input type="date" id="fecha" name="fecha">
+            <!-- date: permite seleccionar una fecha -->
+            <input type="date" id="fecha" name="fecha">
 
-<br><br>
+            <br><br>
 
-<label for="archivo">Tarea:</label>
+            <label for="archivo">Tarea:</label>
 
-<!-- file: permite seleccionar un archivo -->
-<input type="file" id="archivo" name="archivo">
+            <!-- file: permite seleccionar un archivo -->
+            <input type="file" id="archivo" name="archivo">
 
-<br><br>
+            <br><br>
 
-<label for="curso">1º DAW:</label>
+            <label for="curso">Curso:</label>
 
-<!-- value: establece el valor inicial del campo -->
-<!-- readonly: permite ver el dato pero no modificarlo -->
-<input type="text" id="curso" name="curso"
-    value="2026-27" readonly>
+            <!-- value: establece el valor inicial del campo -->
+            <!-- readonly: permite ver el dato pero no modificarlo -->
+            <input type="text" id="curso" name="curso" value="2026-27" readonly>
 
-<br><br>
+            <br><br>
 
-<label for="centro">Centro Paco:</label>
+            <label for="centro">Centro de estudio:</label>
 
-<!-- disabled: desactiva el campo y su dato no se envía -->
-<input type="text" id="centro" name="centro"
-    value="IES La Asunción" disabled>
+            <!-- disabled: desactiva el campo y su dato no se envía -->
+            <input type="text" id="centro" name="centro" value="IES La Asunción" disabled>
 
         </fieldset>
-    <fieldset>
-    <legend>Preferencias</legend>
-    <p>Turno:</p>
+        <fieldset>
+            <legend>Preferencias</legend>
+            <p>Turno:</p>
 
-<!-- radio: permite elegir una sola opción dentro de un grupo -->
-<input type="radio" id="manana" name="turno" value="manana">
-<label for="manana">Mañana</label>
+            <!-- radio: permite elegir una sola opción dentro de un grupo -->
+            <input type="radio" id="manana" name="turno" value="manana">
+            <label for="manana">Mañana</label>
 
-<input type="radio" id="tarde" name="turno" value="tarde">
-<label for="tarde">Tarde</label>
-<p>Intereses:</p>
+            <input type="radio" id="tarde" name="turno" value="tarde">
+            <label for="tarde">Tarde</label>
+            <p>Intereses:</p>
 
-<!-- checkbox: permite marcar varias opciones -->
-<input type="checkbox" id="html" name="intereses" value="html">
-<label for="html">HTML</label>
+            <!-- checkbox: permite marcar varias opciones -->
+            <input type="checkbox" id="html" name="intereses" value="html">
+            <label for="html">HTML</label>
 
-<input type="checkbox" id="css" name="intereses" value="css">
-<label for="css">CSS</label>
+            <input type="checkbox" id="css" name="intereses" value="css">
+            <label for="css">CSS</label>
 
-<input type="checkbox" id="javascript" name="intereses" value="javascript">
-<label for="javascript">JavaScript</label>
-<label for="horas">12:</label>
+            <input type="checkbox" id="javascript" name="intereses" value="javascript">
+            <label for="javascript">JavaScript</label>
+            <label for="horas">12:</label>
 
-<!-- number: permite introducir un número -->
-<!-- min y max: indican el valor mínimo y máximo -->
-<!-- step: indica de cuánto en cuánto aumenta o disminuye -->
-<input type="number" id="horas" name="horas"
-    min="0" max="10" step="2">
+            <!-- number: permite introducir un número -->
+            <!-- min y max: indican el valor mínimo y máximo -->
+            <!-- step: indica de cuánto en cuánto aumenta o disminuye -->
+            <input type="number" id="horas" name="horas" min="0" max="10" step="2">
 
-<br><br>
+            <br><br>
 
-<label for="nivel">Nivel:</label>
+            <label for="nivel">Nivel:</label>
 
-<!-- range: crea una barra deslizante -->
-<input type="range" id="nivel" name="nivel"
-    min="1" max="10">
+            <!-- range: crea una barra deslizante -->
+            <input type="range" id="nivel" name="nivel" min="1" max="10">
 
-<br><br>
+            <br><br>
 
-<label for="color">Azul:</label>
+            <label for="color">Color:</label>
 
-<!-- color: permite seleccionar un color -->
-<input type="color" id="color" name="color">
+            <!-- color: permite seleccionar un color -->
+            <input type="color" id="color" name="color">
 
-<br><br>
+            <br><br>
 
-<label for="hora">22:57:</label>
+            <label for="hora">22:57:</label>
 
-<!-- time: permite seleccionar una hora -->
-<input type="time" id="hora" name="hora">
+            <!-- time: permite seleccionar una hora -->
+            <input type="time" id="hora" name="hora">
 
-<br><br>
+            <br><br>
 
-<label for="semana">1ª semana:</label>
+            <label for="semana">Semana:</label>
 
-<!-- week: permite seleccionar una semana del año -->
-<input type="week" id="semana" name="semana">
+            <!-- week: permite seleccionar una semana del año -->
+            <input type="week" id="semana" name="semana">
 
-<br><br>
+            <br><br>
 
-<label for="mes">Octubre:</label>
+            <label for="mes">Mes:</label>
 
-<!-- month: permite seleccionar un mes y un año -->
-<input type="month" id="mes" name="mes">
-<label for="modulos">DAW:</label>
+            <!-- month: permite seleccionar un mes y un año -->
+            <input type="month" id="mes" name="mes">
+            <label for="modulos">DAW:</label>
 
-<!-- select: crea una lista de opciones -->
-<!-- multiple: permite seleccionar varias opciones -->
-<select id="modulos" name="modulos" multiple>
+            <!-- select: crea una lista de opciones -->
+            <!-- multiple: permite seleccionar varias opciones -->
+            <select id="modulos" name="modulos" multiple>
 
-    <!-- optgroup: agrupa opciones relacionadas -->
-    <optgroup label="Primer curso">
+                <!-- optgroup: agrupa opciones relacionadas -->
+                <optgroup label="Primer curso">
 
-        <!-- option: representa una opción del select -->
-        <option value="lenguaje">Lenguaje de Marcas</option>
-        <option value="bases">Bases de Datos</option>
+                    <!-- option: representa una opción del select -->
+                    <option value="lenguaje">Lenguaje de Marcas</option>
+                    <option value="bases">Bases de Datos</option>
 
-    </optgroup>
+                </optgroup>
 
-    <optgroup label="Otros">
+                <optgroup label="Otros">
 
-        <!-- selected: deja esta opción seleccionada por defecto -->
-        <option value="entornos" selected>Entornos de Desarrollo</option>
-        <option value="sistemas">Sistemas Informáticos</option>
+                    <!-- selected: deja esta opción seleccionada por defecto -->
+                    <option value="entornos" selected>Entornos de Desarrollo</option>
+                    <option value="sistemas">Sistemas Informáticos</option>
 
-    </optgroup>
+                </optgroup>
 
-</select>
+            </select>
 
-<br><br>
+            <br><br>
 
-<label for="comentarios">Mucho texto:</label>
+            <label for="comentarios">Mucho texto:</label>
 
-<!-- textarea: crea un campo de texto de varias líneas -->
-<!-- rows y cols: indican el tamaño visible -->
-<textarea id="comentarios" name="comentarios"
-    rows="5" cols="40"></textarea>
-    </fieldset>
-    <!-- submit: envía el formulario -->
-<input type="submit" value="Enviar">
+            <!-- textarea: crea un campo de texto de varias líneas -->
+            <!-- rows y cols: indican el tamaño visible -->
+            <textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea>
+        </fieldset>
+        <!-- submit: envía el formulario -->
+        <input type="submit" value="Enviar">
 
-<!-- reset: devuelve los campos a sus valores iniciales -->
-<input type="reset" value="Reiniciar">
+        <!-- reset: devuelve los campos a sus valores iniciales -->
+        <input type="reset" value="Reiniciar">
 
-<!-- button: crea un botón sin acción automática -->
-<input type="button" value="Botón">
-<!-- image: funciona como botón de envío usando una imagen -->
-<!-- src: indica la ruta de la imagen -->
-<!-- alt: texto alternativo si la imagen no carga -->
-<input type="image" src="boton.webp" alt="Enviar formulario">
-<!-- button: permite crear botones con contenido dentro -->
-<button type="submit">Enviar</button>
+        <!-- button: crea un botón sin acción automática -->
+        <input type="button" value="Botón">
+        <!-- image: funciona como botón de envío usando una imagen -->
+        <!-- src: indica la ruta de la imagen -->
+        <!-- alt: texto alternativo si la imagen no carga -->
+        <input type="image" src="boton.webp" alt="Enviar formulario">
+        <!-- button: permite crear botones con contenido dentro -->
+        <button type="submit">Enviar</button>
 
-<button type="reset">Reiniciar</button>
+        <button type="reset">Reiniciar</button>
 
-<button type="button">Botón normal</button>
+        <button type="button">Botón normal</button>
 
     </form>
     <form action="https://es.wikipedia.org/w/index.php" method="get">
 
-    <label for="buscar-wiki">Buscar en la wiki:</label>
+        <label for="buscar-wiki">Buscar en la wiki:</label>
 
-    <!-- search: crea un campo pensado para búsquedas -->
-    <!-- list: relaciona el input con un datalist -->
-    <input type="search" id="buscar-wiki" name="search"
-        list="sugerencias">
+        <!-- search: crea un campo pensado para búsquedas -->
+        <!-- list: relaciona el input con un datalist -->
+        <input type="search" id="buscar-wiki" name="search" list="sugerencias">
 
-    <!-- datalist: muestra sugerencias posibles -->
-    <datalist id="sugerencias">
-        <option value="Formulario web">
-        <option value="HTML">
-        <option value="Protocolo de transferencia de hipertexto">
-    </datalist>
+        <!-- datalist: muestra sugerencias posibles -->
+        <datalist id="sugerencias">
+            <option value="Formulario web">
+            <option value="HTML">
+            <option value="Protocolo de transferencia de hipertexto">
+        </datalist>
 
-    <button type="submit">Buscar</button>
+        <button type="submit">Buscar</button>
 
-</form>
-<form action="https://www.openstreetmap.org/search" method="get">
+    </form>
+    <form action="https://www.openstreetmap.org/search" method="get">
 
-    <label for="ciudad">Ciudad:</label>
+        <label for="ciudad">Ciudad:</label>
 
-    <!-- select: crea una lista desplegable -->
-    <select id="ciudad" name="query">
+        <!-- select: crea una lista desplegable -->
+        <select id="ciudad" name="query">
 
-        <optgroup label="Alicante">
-            <option value="Elche">Elche</option>
-            <option value="Alicante">Alicante</option>
-        </optgroup>
+            <optgroup label="Alicante">
+                <option value="Elche">Elche</option>
+                <option value="Alicante">Alicante</option>
+            </optgroup>
 
-        <optgroup label="Valencia">
-            <option value="Valencia">Valencia</option>
-            <option value="Gandía">Gandía</option>
-        </optgroup>
+            <optgroup label="Valencia">
+                <option value="Valencia">Valencia</option>
+                <option value="Gandía">Gandía</option>
+            </optgroup>
 
-    </select>
+        </select>
 
-    <button type="submit">Buscar ciudad</button>
+        <button type="submit">Buscar ciudad</button>
 
-</form>
-<form action="https://validator.w3.org/nu/" method="get">
+    </form>
+    <form action="https://validator.w3.org/nu/" method="get">
 
-    <label for="web">Web a validar:</label>
+        <label for="web">Web a validar:</label>
 
-    <!-- url: crea un campo para una dirección web -->
-    <input type="url" id="web" name="doc"
-        value="https://tricarloski.github.io/TAREA1.9/">
+        <!-- url: crea un campo para una dirección web -->
+        <input type="url" id="web" name="doc" value="https://tricarloski.github.io/TAREA1.9/">
 
-    <br><br>
+        <br><br>
 
-    <input type="checkbox"
-        id="codigo"
-        name="showsource"
-        value="yes">
+        <input type="checkbox" id="codigo" name="showsource" value="yes">
 
-    <label for="codigo">Ver el código</label>
+        <label for="codigo">Ver el código</label>
 
-    <button type="submit">Validar</button>
+        <button type="submit">Validar</button>
 
-</form>
+    </form>
 
 </body>
 
