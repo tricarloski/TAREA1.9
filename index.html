@@ -57,6 +57,34 @@
             <!-- pattern: establece el formato que debe cumplir el dato -->
             <input type="tel" id="telefono" name="telefono"
                 pattern="[0-9]{9}">
+                <label for="fecha">04/02/1702:</label>
+
+<!-- date: permite seleccionar una fecha -->
+<input type="date" id="fecha" name="fecha">
+
+<br><br>
+
+<label for="archivo">Tarea:</label>
+
+<!-- file: permite seleccionar un archivo -->
+<input type="file" id="archivo" name="archivo">
+
+<br><br>
+
+<label for="curso">1º DAW:</label>
+
+<!-- value: establece el valor inicial del campo -->
+<!-- readonly: permite ver el dato pero no modificarlo -->
+<input type="text" id="curso" name="curso"
+    value="2026-27" readonly>
+
+<br><br>
+
+<label for="centro">Centro Paco:</label>
+
+<!-- disabled: desactiva el campo y su dato no se envía -->
+<input type="text" id="centro" name="centro"
+    value="IES La Asunción" disabled>
 
         </fieldset>
 
