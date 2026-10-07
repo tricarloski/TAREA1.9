@@ -1,24 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea 1.9 - Formularios HTML</title>
 </head>
+
 <body>
+
     <!-- form: crea un formulario -->
-<!-- action: indica dónde se envían los datos -->
-<!-- method: indica el método utilizado para enviarlos -->
-<form action="index.html" method="get">
+    <!-- action: indica dónde se envían los datos -->
+    <!-- method: indica el método utilizado para enviarlos -->
+    <form action="index.html" method="get">
 
-    <!-- fieldset: agrupa campos relacionados de un formulario -->
-    <fieldset>
+        <!-- fieldset: agrupa campos relacionados de un formulario -->
+        <fieldset>
 
-        <!-- legend: pone un título al grupo de campos -->
-        <legend>Datos personales by Carlos</legend>
+            <!-- legend: pone un título al grupo de campos -->
+            <legend>Datos personales by Carlos</legend>
 
-    </fieldset>
+            <!-- label: relaciona un texto con un campo mediante for -->
+            <label for="nombre">Nombre:</label>
 
-</form>
+            <!-- text: crea un campo de texto -->
+            <!-- placeholder: muestra una ayuda dentro del campo vacío -->
+            <!-- required: obliga a completar el campo -->
+            <!-- autofocus: pone el foco en este campo al cargar la página -->
+            <!-- size: indica el ancho visible del campo -->
+            <!-- maxlength: limita el número máximo de caracteres -->
+            <input type="text" id="nombre" name="nombre"
+                placeholder="Choripan"
+                required autofocus size="30" maxlength="40">
+
+            <br><br>
+
+            <label for="contrasena">Contraseña:</label>
+
+            <!-- password: oculta los caracteres introducidos -->
+            <!-- minlength: indica el mínimo de caracteres -->
+            <input type="password" id="contrasena" name="contrasena"
+                minlength="8" required>
+
+            <br><br>
+
+            <label for="correo">Correo:</label>
+
+            <!-- email: crea un campo para una dirección de correo -->
+            <input type="email" id="correo" name="correo" required>
+
+            <br><br>
+
+            <label for="telefono">Teléfono:</label>
+
+            <!-- tel: crea un campo para un número de teléfono -->
+            <!-- pattern: establece el formato que debe cumplir el dato -->
+            <input type="tel" id="telefono" name="telefono"
+                pattern="[0-9]{9}">
+
+        </fieldset>
+
+    </form>
+
 </body>
+
 </html>
