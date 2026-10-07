@@ -224,6 +224,28 @@
     <button type="submit">Buscar</button>
 
 </form>
+<form action="https://www.openstreetmap.org/search" method="get">
+
+    <label for="ciudad">Ciudad:</label>
+
+    <!-- select: crea una lista desplegable -->
+    <select id="ciudad" name="query">
+
+        <optgroup label="Alicante">
+            <option value="Elche">Elche</option>
+            <option value="Alicante">Alicante</option>
+        </optgroup>
+
+        <optgroup label="Valencia">
+            <option value="Valencia">Valencia</option>
+            <option value="Gandía">Gandía</option>
+        </optgroup>
+
+    </select>
+
+    <button type="submit">Buscar ciudad</button>
+
+</form>
 
 </body>
 
