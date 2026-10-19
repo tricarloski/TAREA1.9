@@ -253,15 +253,19 @@
         <button type="submit">Validar</button>
 
     </form>
-    <h2>Reflexión GET</h2>
+    <h2>¿Qué problema de seguridad descubres en el historial por haber enviado la inscripción con GET? ¿Qué método
+        recomienda el artículo para un formulario como este y por qué?</h2>
 
     <p>
-        Al usar GET, los datos del formulario aparecen en la URL.
+        Al usar GET, los datos del formulario aparecen en la URL y pueden quedar guardados en el historial del
+        navegador.
         Esto puede ser un problema para datos sensibles como contraseñas.
-        También he comprobado que los campos disabled no se envían,
-        mientras que los readonly sí pueden enviarse.
+        Para un formulario como este es mejor utilizar POST, porque los datos se envían en el cuerpo de la petición y no
+        aparecen en la URL.
+        También he comprobado que los campos disabled no se envían, mientras que los readonly sí pueden enviarse.
     </p>
-    <h2>Reflexión POST</h2>
+    <h2>¿Qué ocurre al enviar la inscripción con POST? Según el artículo, ¿qué tendría que haber en el servidor para
+        procesar esos datos?</h2>
 
     <p>
         Al enviar el formulario con POST, los datos ya no aparecen en la URL.
